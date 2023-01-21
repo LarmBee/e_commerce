@@ -4,13 +4,25 @@ import useStyles from "./styles";
 import CartItem from "./CartItem/CartItem";
 import { Link } from "react-router-dom";
 
-const Cart = ({ cart }) => {
+const Cart = ({
+	cart,
+	onUpdateCartQty,
+	onRemoveFromCart,
+	onEmptyCart,
+}) => {
+
 	const classes = useStyles();
+
+	const handleEmptyCart = () => onEmptyCart();
+
+	
 
 	const EmptyCart = () => (
 		<Typography variant="subtitle1">
-			You have no items in your shopping cart. Please add some items to continue
-			<Link to='/' className={classes.link}>Add items to cart</Link>
+			You have no items in your shopping cart. Please add some items to continue<br/>
+			<Link to="/" className={classes.link}>
+				Add items to cart
+			</Link>
 		</Typography>
 	);
 
@@ -19,7 +31,7 @@ const Cart = ({ cart }) => {
 			<Grid container spacing={3}>
 				{cart.line_items.map((item) => (
 					<Grid item xs={12} sm={4} key={item.id}>
-						<CartItem item={item}/>
+						<CartItem item={item} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart} />
 					</Grid>
 				))}
 			</Grid>
@@ -35,10 +47,12 @@ const Cart = ({ cart }) => {
 						type="button"
 						variant="contained"
 						color="secondary"
+						onClick={handleEmptyCart}
 					>
 						Empty Cart
 					</Button>
 					<Button
+						component={Link} to='/checkout'
 						className={classes.checkoutButton}
 						size="large"
 						type="button"
@@ -52,8 +66,7 @@ const Cart = ({ cart }) => {
 		</>
 	);
 
-
-    if (!cart.line_items) return "Loading..."
+	if (!cart.line_items) return "Loading...";
 	return (
 		<Container>
 			<div class={classes.toolbar} />
