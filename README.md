@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Welcome to Duka 254
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Duka 254 is a concept of a fully functional e-commerce store 
 
-## Available Scripts
 
-In the project directory, you can run:
+# Technologies Used
 
-### `npm start`
+ - React JS
+ - Commerce.JS
+ - Material UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+The logo is accessible in the left corner of the navigation bar. This acts as the default "send to home " button" and can be used throughout the application to return back to the main section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Adding to Cart
+All the products shown can be added to the cart via the add to cart button which is located in every item card on the bottom right . After clicking it there is a slight lag but you can see it added and there will be an increment in the number of items in the main cart (Top right) 
 
-### `npm run build`
+## Viewing items in Cart.
+You can view items in the cart by clicking on the cart button (Top right of the navigation bar) . It will open a new window showing all your current items along with the quantity you have added to the cart and the total of each individual item 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Delete items from Cart
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can delete items from the cart via the delete button but if you decrease the number past 1 it automatically deleted. You can also clear the cart using the clear button 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Checkout
+This section leads to payments which is still currently under production
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Collaboration
+If you have any inquires or would love to work together on this feel free to reach me @ **brandonkanute@gmail.com**
